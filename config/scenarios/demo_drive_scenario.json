@@ -1,0 +1,13 @@
+{
+  "name": "Typical Smart Cockpit Multi-Zone Drive Scenario",
+  "events": [
+    { "time_sec": 0.0, "action": "set_speed", "speed_kmh": 30.0 },
+    { "time_sec": 0.0, "action": "start_stream", "tag": "driver_music", "zone": "DRIVER", "usage": "MEDIA", "focus": "GAIN", "signal": "sine", "freq_hz": 440.0, "duration_sec": 10.0, "loop": true },
+    { "time_sec": 0.0, "action": "start_stream", "tag": "rear_left_movie", "zone": "REAR_LEFT", "usage": "MEDIA", "focus": "GAIN", "signal": "sine", "freq_hz": 330.0, "duration_sec": 10.0, "loop": true },
+    { "time_sec": 1.0, "action": "set_speed", "speed_kmh": 95.0 },
+    { "time_sec": 1.5, "action": "start_stream", "tag": "nav_tts", "zone": "DRIVER", "usage": "NAVIGATION", "focus": "GAIN_TRANSIENT_MAY_DUCK", "signal": "chime", "freq_hz": 660.0, "duration_sec": 1.5, "loop": false },
+    { "time_sec": 3.5, "action": "start_stream", "tag": "bt_call", "zone": "DRIVER", "usage": "CALL", "focus": "GAIN_TRANSIENT", "signal": "sine", "freq_hz": 520.0, "duration_sec": 2.0, "loop": false },
+    { "time_sec": 6.0, "action": "start_stream", "tag": "adas_fcw", "zone": "CABIN_GLOBAL", "usage": "ADAS_WARNING", "focus": "GAIN_TRANSIENT_EXCLUSIVE", "signal": "adas", "freq_hz": 1200.0, "duration_sec": 1.2, "loop": false }
+  ],
+  "total_duration_sec": 8.0
+}
